@@ -3,7 +3,7 @@
 declare -a samsung_bloat=(
 
 	#####################  SAFE TO DEBLOAT (useless features)  #####################
-	
+
 	"com.cnn.mobile.android.phone.edgepanel" # (Samsung-exclusive)
 	# CNN Edge panel. Twitter trends, and news from CNN.
 
@@ -13,16 +13,16 @@ declare -a samsung_bloat=(
 
 	"com.hiya.star" # also called android-ss-service-lib (Samsung-exclusive)
 	# Third-party that provides caller profile information to help consumers identify incoming calls and block unwanted ones.
-	# https://hiya.com/ 
-	# NOTE : Never trust a company which promotes spam blocking features 
+	# https://hiya.com/
+	# NOTE : Never trust a company which promotes spam blocking features
 	# https://itmunch.com/robocall-caught-sending-customers-confidential-data-without-consent/
-	
+
 	"com.knox.vpn.proxyhandler" # KNOX stuff
-	# Samsung Knox allows business and personal content to "securely" coexist on the same handset. 
+	# Samsung Knox allows business and personal content to "securely" coexist on the same handset.
 	# This package handle proxy along side KNOX
 
 	"com.mobeam.barcodeService"
-	# The Beaming Service enables your device to beam (relay) barcodes, as found on digital coupons, event tickets, library cards, loyalty 
+	# The Beaming Service enables your device to beam (relay) barcodes, as found on digital coupons, event tickets, library cards, loyalty
 	# cards and membership cards to 1D red laser and Image based scanners prevalent at nearly every retail store and checkout stand around the world.
 	# Mobeam is a 3-party (https://mobeam.com/)
 
@@ -35,7 +35,7 @@ declare -a samsung_bloat=(
 
 	#"com.samsung.advp.imssettings"
 	# Needed for VoLTE, a standard for high-speed wireless communication (https://en.wikipedia.org/wiki/Voice_over_LTE)
-	# I don't really know the role of this package. It is obiously related to IMS, an open industry standard for 
+	# I don't really know the role of this package. It is obiously related to IMS, an open industry standard for
 	# voice and multimedia communications over IP.
 
 	"com.samsung.android.aircommandmanager"
@@ -48,7 +48,7 @@ declare -a samsung_bloat=(
 	# Allows two devices to establish a direct Wi-Fi connection without requiring a wireless router.
 	# https://www.samsung.com/au/support/mobile-devices/connecting-devices-via-wifi-direct/
 	# https://en.wikipedia.org/wiki/Wi-Fi_Direct
-	
+
 	"com.samsung.android.allshare.service.mediashare"
 	# Samsung Allshare service (now called SmartView).
 	# Used to stream content from your phone to a Samsung smart TV.
@@ -56,10 +56,10 @@ declare -a samsung_bloat=(
 
 	"com.samsung.android.app.advsounddetector"
 	# Samsung Sound detectors
-	# Uses microphone to identify recognizable sounds. For example, if it recognizes a baby's cry, it can alert you with flashing lights so 
+	# Uses microphone to identify recognizable sounds. For example, if it recognizes a baby's cry, it can alert you with flashing lights so
 	# you know to check on your baby. Or it can notify you if it hears the doorbell ring so you know to open the door.
 	#
-	# adv maybe refers to Samsung Advanced Institute of Technology 
+	# adv maybe refers to Samsung Advanced Institute of Technology
 
 	#"com.samsung.android.app.aodservice"
 	# Always On Display (https://play.google.com/store/apps/details?id=com.samsung.android.app.aodservice&hl=en)
@@ -71,7 +71,7 @@ declare -a samsung_bloat=(
 
 	"com.samsung.android.app.assistantmenu"
 	# Assistant menu
-	# Designed for individuals with motor control or other physical impairments. 
+	# Designed for individuals with motor control or other physical impairments.
 	# By using Assistant menu, you can access hardware buttons and all parts of the screen by simply tapping or swiping.
 	# https://www.samsung.com/uk/accessibility/mobile-assistant-menu/
 
@@ -83,22 +83,22 @@ declare -a samsung_bloat=(
 	# Safe to remove
 
 	"com.samsung.android.app.camera.sticker.facearframe.preload" # [MORE INFO NEEDED]
-	# Frames sticker ? 
+	# Frames sticker ?
 	# I don't know what this sticker is and I don't have this package.
 
 	"com.samsung.android.app.camera.sticker.facearavatar.preload"
 	# Kid avatar stockers on Samsung camera ? (not sure)
-	
+
 	"com.samsung.android.app.clipboardedge"
 	# Clipboard edge panel
 
 	#"com.sec.android.app.clockpackage"
-	# Samsung clock 
+	# Samsung clock
 
 	"com.samsung.android.app.cocktailbarservice"
 	# Edge screen
 	# Enables you to open your five most used apps by simply swiping the edge of the screen.
-	# Swipe one of the edges of the screen to bring up information even when your device is locked (with the screen off). 
+	# Swipe one of the edges of the screen to bring up information even when your device is locked (with the screen off).
 	# You can also set it up to display the news or weather, for example.
 
 	"com.samsung.android.app.episodes"
@@ -110,12 +110,12 @@ declare -a samsung_bloat=(
 	# This package is only triggered when you install an app (private class PackageIntentReceiver)
 
 	"com.samsung.android.app.galaxyfinder"
-	# S Finder is a search application that allows you to find what you want in an instant by searching the content on your 
+	# S Finder is a search application that allows you to find what you want in an instant by searching the content on your
 	# Galaxy smartphone and on the web as well. (https://www.samsung.com/global/galaxy/what-is/s-finder/)
 
 	"com.samsung.app.highlightplayer"
 	# Samsung Story Video Editor
-	# Lets you edit your videos stories 
+	# Lets you edit your videos stories
 
 	"com.samsung.android.app.interactivepanoramaviewer" #Name : Visual. photo virt.
 	# Samsung Virtual Shot Viewer enable sharing virtual shot
@@ -133,7 +133,7 @@ declare -a samsung_bloat=(
 	"com.samsung.android.app.mhswrappertmo"
 	# Mobile Hotspot
 	# Is it linked to T-Mobile ? ("tmo" at the end of the package)
-	# You can debloat this and still create hotspot. 
+	# You can debloat this and still create hotspot.
 
 	"com.samsung.android.app.mirrorlink"
 	# Used to connect your phone to a car in order to provide audio streaming, GPS navigation...
@@ -146,9 +146,9 @@ declare -a samsung_bloat=(
 
 	"com.samsung.android.app.news"
 	# News Samsung app
-	# Doesn't exist anymore ? 
+	# Doesn't exist anymore ?
 
-	"com.samsung.android.app.notes" 
+	"com.samsung.android.app.notes"
 	# Samsung Notes app (https://play.google.com/store/apps/details?id=com.samsung.android.app.notes)
 
 	"com.samsung.android.app.pinboard"
@@ -164,7 +164,7 @@ declare -a samsung_bloat=(
 	# Automating actions triggered by context clues: location, time, or event
 
 	"com.samsung.android.app.sbrowseredge"
-	# Related to internet browser. For Galaxy Edge ? 	
+	# Related to internet browser. For Galaxy Edge ?
 
 	#"com.samsung.android.app.selfmotionpanoramaviewer"
 	# Selfie panorama viewer
@@ -191,7 +191,7 @@ declare -a samsung_bloat=(
 	# for controlling their smart home gadgets.
 
 	"com.samsung.android.app.storyalbumwidget"
-	# The Story Album widget enables you to access the Story Album app and create digital picture albums that you can view and acess directly 
+	# The Story Album widget enables you to access the Story Album app and create digital picture albums that you can view and acess directly
 	# from the widget on a Home screen.
 	# Old feature (from Galaxy S4)
 
@@ -224,12 +224,12 @@ declare -a samsung_bloat=(
 	# https://www.samsung.com/us/apps/smart-view-2/
 
 	"com.samsung.android.aremoji"
-	# AR Emoji mode for Samsung camera 
+	# AR Emoji mode for Samsung camera
 	# https://www.samsung.com/global/galaxy/what-is/ar-emoji/
 
 	"com.samsung.android.asksmanager"
 	# Samsung device protection manager.
-	# It's anti-theft feature. I couldn't find exactly what does the samsung layer to the already existing android device protection : 
+	# It's anti-theft feature. I couldn't find exactly what does the samsung layer to the already existing android device protection :
 	# https://www.greenbot.com/article/2904397/everything-you-need-to-know-about-device-protection-in-android-51.html
 
 	"com.samsung.android.authfw"
@@ -247,11 +247,11 @@ declare -a samsung_bloat=(
 
 	"com.samsung.android.beaconmanager"
 	# Replaced by Samsung Smart Things (com.samsung.android.ststub)
-	# Allows users to control, automate, and monitor their home environment via mobile device. 
+	# Allows users to control, automate, and monitor their home environment via mobile device.
 	# https://en.wikipedia.org/wiki/SmartThings
 
 	# Bixby (Samsung intelligence assistant)
-	# Enable or Disable access to S-Voice or Bixby voice controls. 
+	# Enable or Disable access to S-Voice or Bixby voice controls.
 	# This does not prevent access to other voice-controlled apps, only the Samsung-provided ones.
 	"com.samsung.android.bixby.agent" # Bixby voice
 	"com.samsung.android.bixby.agent.dummy" # Bixby Voice Stub
@@ -279,7 +279,7 @@ declare -a samsung_bloat=(
 	# Allows you to use two separate accounts for the same app.
 
 	"com.samsung.android.drivelink.stub"
-	# Stub for car mode 
+	# Stub for car mode
 	# REMINDER : Stub = https://stackoverflow.com/questions/10648280/what-is-stub-and-aidl-for-in-java
 
 	"com.samsung.android.easysetup"
@@ -295,22 +295,22 @@ declare -a samsung_bloat=(
 
 	"com.samsung.android.fmm"
 	# Find My Mobile
-	# Tracks down your device when it gets lost. 
+	# Tracks down your device when it gets lost.
 	# Lets you remotely lock your device, block access to Samsung Pay and wipe data from the entire device.
 	# https://www.samsung.com/global/galaxy/what-is/find-my-mobile/
 	# https://findmymobile.samsung.com/
 
 	"com.samsung.android.game.gamehome"
-	# Samsung Game Launcher 
+	# Samsung Game Launcher
 	# https://www.samsung.com/global/galaxy/apps/game-launcher/
 	# All in one hub for mobiles games
 
 	"com.samsung.android.game.gametools"
 	# Samsung Game Tools (https://www.samsung.com/au/support/mobile-devices/how-to-use-game-tools/)
-	# Let you record and share screenshots of your game-play. 
+	# Let you record and share screenshots of your game-play.
 
 	"com.samsung.android.game.gos"
-	# Samsung Game Optimizing Service 
+	# Samsung Game Optimizing Service
 	# Is supposed to "improve" game performance.
 
 	"com.samsung.android.gametuner.thin"
@@ -319,7 +319,7 @@ declare -a samsung_bloat=(
 	# in mobile games that require tuning for different Android devices, and thereby control heat generation and battery drain.
 
 	"com.samsung.android.hmt.vrshell"
-	# Gear VR Shell 
+	# Gear VR Shell
 	# Gear VR : https://360samsungvr.com/portal/content/about_samsung_vr
 
 	"com.samsung.android.hmt.vrsvc"
@@ -331,16 +331,16 @@ declare -a samsung_bloat=(
 	# Some people say it's linked to Carrier IQ (which is a carrier rootkit for the NSA).
 	# https://en.wikipedia.org/wiki/Carrier_IQ
 	# https://forum.xda-developers.com/showpost.php?s=c85df628dfc39c3a971e6f9cfa98cbb8&p=54071328&postcount=6
-	# This package also have very stranges permissions : READ_PLACE / WRITE_PLACE. I couldn't find any explaination on the web. 
+	# This package also have very stranges permissions : READ_PLACE / WRITE_PLACE. I couldn't find any explaination on the web.
 	# So either it's a useless samsung package either it's a spyware. I delete it and I didn't notice anything bad.
 
 	"com.samsung.android.keyguardwallpaperupdator"
-	# Lets you customize your Samsung device with different images (provided by Samsung) on the lock screen. 
+	# Lets you customize your Samsung device with different images (provided by Samsung) on the lock screen.
 
 	"com.samsung.android.kidsinstaller"
 	# Samsung Kids Home (https://www.samsung.com/global/galaxy/apps/samsung-kids-home/)
 	# Lets you shape a "safe environment" for your child.
-	# NOTE : You shouldn't give your phone to a child. That bad ! 
+	# NOTE : You shouldn't give your phone to a child. That bad !
 	# https://ifstudies.org/blog/a-smartphone-will-change-your-child-in-ways-you-might-not-expect-or-want
 
 	"com.samsung.android.location"
@@ -352,10 +352,10 @@ declare -a samsung_bloat=(
 	# The clean feature (in storage setting) is provided by Qihoo 360 which is a shady company (https://en.wikipedia.org/wiki/Qihoo_360)
 	# https://www.reddit.com/r/Android/comments/ektg8u/chinese_spyware_preinstalled_on_all_samsung/
 	# https://www.virustotal.com/gui/file/048ead2be8d18bbe2b05651380069b3740dd05703e9bd66630da986026518398/details
-	# NOTE : If you don't want to delete this package, at least use a firewall (Netguard/AfWall+) to block internet access 
+	# NOTE : If you don't want to delete this package, at least use a firewall (Netguard/AfWall+) to block internet access
 
 	"com.samsung.android.mateagent"
-	# Samsung Galaxy Friends is an accessory platform service that allows the user to enjoy a variety of content quickly 
+	# Samsung Galaxy Friends is an accessory platform service that allows the user to enjoy a variety of content quickly
 	# and easily by simply connecting an accessory, without having to install additional applications.
 	# https://developer.samsung.com/codelab/SDC18-experiences/Galaxy-Friends
 
@@ -363,7 +363,7 @@ declare -a samsung_bloat=(
 	# MDMApp (Mobile Device Management app)
 	# Used to monitor and manage remotely  mobile devices.
 	# For exemple locking split-screen, blocking safe mode boot, enabling branding logo in the lock screen, remotely configuring IMAP email...
-	# Most likely related to KNOX 
+	# Most likely related to KNOX
 	# https://www.samsungknox.com/en/solutions/it-solutions/knox-manage
 	# https://developer.samsung.com/tech-insights/knox/mobile-device-management
 
@@ -372,16 +372,16 @@ declare -a samsung_bloat=(
 	# https://www.samsung.com/latin_en/support/mobile-devices/media-and-device-feature/
 
 	#"com.samsung.android.messaging"
-	# Samsung Messaging app 
+	# Samsung Messaging app
 
 	"com.samsung.android.mobileservice"
 	# Samsung Experience Service (https://play.google.com/store/apps/details?id=com.samsung.android.mobileservice)
 	# Handle you samsung account and is needed to use some samsung apps features.
-	# It allows you to use multiple Samsung apps, such as Samsung Health, Samsung Pay, Galaxy Apps, Samsung Members, and SmartThings, 
+	# It allows you to use multiple Samsung apps, such as Samsung Health, Samsung Pay, Galaxy Apps, Samsung Members, and SmartThings,
 	# with your Samsung account credentials.
 
 	#"com.samsung.android.MtpApplication"
-	# Samsung overlay for MTP. 
+	# Samsung overlay for MTP.
 
 	"com.samsung.android.networkdiagnostic"
 	# Network Diagnostic
@@ -400,16 +400,16 @@ declare -a samsung_bloat=(
 	# Provide camera modes (when you swipe left fromt the camera app)
 	# Safe to remove (but it is quite useful)
 
-	#"com.samsung.android.provider.stickerprovider" 
+	#"com.samsung.android.provider.stickerprovider"
 	# One more package related to camera stickers.
-	# DO NOT REMOVE THIS IF YOU USE STOCK CAMERA (Samsung camera-app closes after about 4s!) 
+	# DO NOT REMOVE THIS IF YOU USE STOCK CAMERA (Samsung camera-app closes after about 4s!)
 	# adb shell 'pm disable-user com.samsung.android.provider.stickerprovider' can be used as a workaround if you want to stop this running in the background.
 
 	"com.samsung.android.providers.context"
-	# Spyware 
+	# Spyware
 	# https://www.eteknix.com/samsungs-context-service-may-take-data-collection-surveillance-worrying-levels/
 	# https://www.theinquirer.net/inquirer/news/2328363/samsung-context-service-will-collect-user-data-to-share-with-developers
-	# Safe to remove 
+	# Safe to remove
 
 	"com.samsung.android.samsungpass"
 	# Samsung Pass app
@@ -430,7 +430,7 @@ declare -a samsung_bloat=(
 	# https://developer.samsung.com/html/techdoc/ProgrammingGuide_ProfessionalAudio.pdf
 
 	"com.samsung.android.shortcutbackupservice"
-	# ShortcutBNR 
+	# ShortcutBNR
 	# Packages permissions suggest it is used for cloud backup.
 
 	"com.samsung.android.stickerplugin" # [MORE INFO NEEDED]
@@ -442,7 +442,7 @@ declare -a samsung_bloat=(
 	# Smart Manager
 	# I don't understand why I have this package because I don't have Smart Manager
 	# https://forum.xda-developers.com/galaxy-note-9/help/samsung-services-dialling-home-to-china-t3894033
-	# Safe to remove ? 
+	# Safe to remove ?
 
 	# Samsung Cloud (https://www.samsung.com/us/support/owners/app/samsung-cloud)
 	"com.samsung.android.scloud" # Samsung Cloud app
@@ -466,7 +466,7 @@ declare -a samsung_bloat=(
 	# https://www.samsung.com/global/galaxy/what-is/live-message/
 
 	"com.samsung.android.service.peoplestripe"
-	# People Edge 
+	# People Edge
 	# https://www.samsung.com/global/galaxy/what-is/people-edge/
 	# https://videotron.tmtx.ca/en/topic/samsung_galaxys9/using_people_edge.html
 	# It gives you immediate access to your favorite contacts from the edge panel.
@@ -481,13 +481,13 @@ declare -a samsung_bloat=(
 
 	"com.samsung.android.spay"
 	# Samsung Pay (https://play.google.com/store/apps/details?id=com.samsung.android.spay)
-	# Samsung Pay is a mobile payment and digital wallet service by Samsung Electronics that lets users make payments using compatible phones 
+	# Samsung Pay is a mobile payment and digital wallet service by Samsung Electronics that lets users make payments using compatible phones
 	# and other Samsung-produced devices
 	# https://en.wikipedia.org/wiki/Samsung_Pay
 	# NOTE : Samsung Pay is KNOX dependant and will never work again if you root your phone.
 	# FYI : Your data are sold (https://www.sammobile.com/news/samsung-pay-new-privacy-policy-your-data-sold/)
 
-	"com.samsung.android.spayfw" 
+	"com.samsung.android.spayfw"
 	# Samsung Pay Framework needed for Samsung Pay
 	# See above
 
@@ -499,7 +499,7 @@ declare -a samsung_bloat=(
 	# Sticker center. Used to retrieve stickers from the web in the camera app.
 
 	"com.samsung.android.ststub"
-	# Allows users to control, automate, and monitor their home environment via mobile device. 
+	# Allows users to control, automate, and monitor their home environment via mobile device.
 	# https://en.wikipedia.org/wiki/SmartThings
 	# REMINDER : stub = https://stackoverflow.com/questions/10648280/what-is-stub-and-aidl-for-in-java
 
@@ -509,7 +509,7 @@ declare -a samsung_bloat=(
 	# https://www.samsung.com/global/galaxy/what-is/s-voice/
 
 	"com.samsung.android.svoiceime"
-	# Samsung voice input 
+	# Samsung voice input
 	# Voice input powered by Bixby. See above.
 
 	"com.samsung.android.themestore"
@@ -547,7 +547,7 @@ declare -a samsung_bloat=(
 	# Safe to remove (but not recommanded)
 
 	"com.samsung.android.universalswitch"
-	# Universal Switch lets you designate certain touches or gestures to control specific actions on your phone. 
+	# Universal Switch lets you designate certain touches or gestures to control specific actions on your phone.
 	# https://www.samsung.com/uk/accessibility/mobile-universal-switch/
 
 	"com.samsung.android.voicewakeup"
@@ -559,14 +559,14 @@ declare -a samsung_bloat=(
 
 	"com.samsung.android.wellbeing"
 	# Digital Welbeing (https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing)
-	# is a feature which shows apps dashboard through which one can see how much time any application opened and 
+	# is a feature which shows apps dashboard through which one can see how much time any application opened and
 	# also swiping to different screens allows you to see breakdowns by day, by hour and by app.
 
 	"com.samsung.android.widgetapp.yahooedge.finance"
 	# Samsung Finance provided by Yahoo
 
 	"com.samsung.android.widgetapp.yahooedge.sport"
-	# Samsung Sport provided by Yahoo 
+	# Samsung Sport provided by Yahoo
 
 	#"com.samsung.app.slowmotion"
 	# Slowmotion mode in camera app
@@ -604,24 +604,24 @@ declare -a samsung_bloat=(
 	# https://www.samsung.com/us/explore/shop-samsung-app/
 
 	"com.samsung.enhanceservice"
-	# Enhanced service is the process for Samsung cloud messaging (equivalent to iMessage on iOS). 
-	# Messages on Samsung phones can be transmitted through either the network carrier or the non-archived Samsung service 
+	# Enhanced service is the process for Samsung cloud messaging (equivalent to iMessage on iOS).
+	# Messages on Samsung phones can be transmitted through either the network carrier or the non-archived Samsung service
 	# (which is transmitted over wireless data).
 	# This features is available in stock samsung SMS app settings.
 
 	"com.samsung.groupcast"
 	# Samsung Group Play (discontinued)
-	# Allows you to share pictures , documents and music files with many people at same time  if everyone is connected to a Wi-Fi network. 
+	# Allows you to share pictures , documents and music files with many people at same time  if everyone is connected to a Wi-Fi network.
 	# https://www.samsung.com/in/support/mobile-devices/what-is-group-play-in-samsung-smartphones/
 
 	"com.samsung.helphub"
 	# Not sure if this package still exist.
-	# Provide help 
+	# Provide help
 
 	"com.samsung.hiddennetworksetting"
 	# Set of hidden network settings (inlcuding frequency bands choice)
 	# How to see these settings : https://forum.xda-developers.com/galaxy-note-8/help/q-hidden-network-settings-pie-t3914421/page4
-	
+
 	"com.samsung.ipservice"
 	# Name and permissions of this package suggest that it is used by Galaxy Finder to seek stuff on the web.
 
@@ -641,13 +641,13 @@ declare -a samsung_bloat=(
 	# Knox Quick Access allows users to access the Knox Workspace container using wearables such as the Galaxy Gear S2.
 
 	"com.samsung.knox.kss"
-	# Knox Keyguard. Not much more information 
+	# Knox Keyguard. Not much more information
 
 	"com.samsung.knox.securefolder"
 	# Knox Secure Folder (https://play.google.com/store/apps/details?id=com.samsung.knox.securefolder)
 	# Create a secure space on your device to encrypt and store your private data and apps.
 	# https://www.samsungknox.com/en/solutions/personal-apps/secure-folder
-	# NOTE : The key used to encrypt the files is not derived from the password you use to unlock the secure folder 
+	# NOTE : The key used to encrypt the files is not derived from the password you use to unlock the secure folder
 	# but rather from a key stored in the hardware that is set in the factory.
 
 	"com.samsung.mdl.radio"
@@ -658,7 +658,7 @@ declare -a samsung_bloat=(
 	"com.samsung.mlp"
 	# Samsung My Little Poney..... xD
 	# MPL means Mobile Location Protocol.
-	# From wikipédia : The purpose of this technology is to define a simple and secure access method that allows mobile application 
+	# From wikipédia : The purpose of this technology is to define a simple and secure access method that allows mobile application
 	# to query location information from a wireless network, regardless of its underlying network technology and positioning methods.
 	# https://en.wikipedia.org/wiki/Mobile_Location_Protocol
 	# As it's a samsung package there is big chances that it only serve Samsung stuff.
@@ -671,7 +671,7 @@ declare -a samsung_bloat=(
 	# OOOPS ! https://bgr.com/2019/10/31/samsung-members-dong-pic-oops/
 
 	"com.samsung.safetyinformation"
-	# Safety information for the hardware ? 
+	# Safety information for the hardware ?
 
 	#"com.samsung.sdm"
 	# System Updates. Need to investigate. It seems useless and I don't have this package on my phone.
@@ -712,10 +712,10 @@ declare -a samsung_bloat=(
 	# UCS is a company which has partnered with Samsung to provide licenses for Samsung Knox
 	# https://www.ucssolutions.com/blog/samsung-knox/
 	# I don't have precise information about the package itself but there is chances that it verify some files on boot. If theses files are not verified
-	# then it prevent the phone to boot 
+	# then it prevent the phone to boot
 
 	"com.samsung.ucs.agent.ese"
-	# eSE UCS Plugin is another package from UCS. It makes possible for apps to access eSE of Samsung mobile devices by using the UCM 
+	# eSE UCS Plugin is another package from UCS. It makes possible for apps to access eSE of Samsung mobile devices by using the UCM
 	# (Universal Credential Management) APIs and framework.
 	# https://docs.samsungknox.com/dev/knox-sdk/faqs/general/what-is-universal-credential-management_-ucm.htm
 	# https://www.samsung.com/semiconductor/security/ese/
@@ -731,7 +731,7 @@ declare -a samsung_bloat=(
 	# https://www.samsung.com/global/galaxy/what-is/s-voice/
 
 	"com.samsung.vvm"
-	# Samsung Voicemail 
+	# Samsung Voicemail
 	# Allows you to review and manage your voicemail directly from your smartphone, eliminating the need to dial into your mailbox.
 	# https://mobile.spectrum.com/support/article/360001296667/samsung-visual-voicemail
 
@@ -746,12 +746,12 @@ declare -a samsung_bloat=(
 	# https://www.samsung.com/global/galaxy/what-is/motion-photo/
 
 	"com.sec.android.app.applinker"
-	# I don't know what it is but it seems pretty useless to me ! 
+	# I don't know what it is but it seems pretty useless to me !
 	# It surely help samsung apps to comunicate beetwen them.
 
 	"com.sec.android.app.billing"
 	# Samsung billing
-	# Used to purchase apps through Samsung Store application that is delivered with Samsung phones. 
+	# Used to purchase apps through Samsung Store application that is delivered with Samsung phones.
 	# Acts as bridge between Samsung Store and payment servers.
 
 	#"com.sec.android.app.camera"
@@ -775,16 +775,16 @@ declare -a samsung_bloat=(
 	#"com.sec.android.app.launcher"
 	# Samsung One UI Home launcher (homescreen) (https://play.google.com/store/apps/details?id=com.sec.android.app.launcher)
 	# It is samsung Touchwiz default launcher
-	# DO NOT REMOVE THIS IF YOU DON'T USE ANOTHER LAUNCHER ! 
+	# DO NOT REMOVE THIS IF YOU DON'T USE ANOTHER LAUNCHER !
 
 	"com.sec.android.app.magnifier"
 	# Lets you use your device as a magnifying glass making it easier to read any small font or expand the details of any object, for example.
 
 	#"com.sec.android.app.myfiles"
-	# Samsung file manager app (https://play.google.com/store/apps/details?id=com.sec.android.app.myfiles) 
+	# Samsung file manager app (https://play.google.com/store/apps/details?id=com.sec.android.app.myfiles)
 
 	"com.sec.android.app.mt"
-	# The Mobile tracker is a security feautre in your device that if someone inserts a new SIM card in your device the device will automatically 
+	# The Mobile tracker is a security feautre in your device that if someone inserts a new SIM card in your device the device will automatically
 	# sends the SIM contact number to specified recipients to help you locate and recover you device.
 	# https://www.samsung.com/nz/support/mobile-devices/what-is-mobile-tracker/
 
@@ -854,8 +854,8 @@ declare -a samsung_bloat=(
 	# HOW IT WORKS : https://forum.xda-developers.com/galaxy-note-8/accessories/how-led-cover-t3686694
 
 	"com.sec.android.daemonapp"
-	# Unified Daemon app 
-	# provides support for a number of different apps on your device. These include the Weather, Yahoo Finance and Yahoo News apps amongst others. 
+	# Unified Daemon app
+	# provides support for a number of different apps on your device. These include the Weather, Yahoo Finance and Yahoo News apps amongst others.
 	# The data is used by apps such as the Alarm, Calendar app and the camera.
 
 	"com.sec.android.desktopmode.uiservice"
@@ -865,7 +865,7 @@ declare -a samsung_bloat=(
 
 	"com.sec.android.easyMover"
 	# Samsung Smart Switch Mobile (https://play.google.com/store/apps/details?id=com.sec.android.easyMover)
-	# Allows you to easily transfer content (contacts, photos, music, notes, etc.) to a new Samsung Galaxy device. 
+	# Allows you to easily transfer content (contacts, photos, music, notes, etc.) to a new Samsung Galaxy device.
 	# https://www.samsung.com/global/galaxy/apps/smart-switch/
 	# https://fr.wikipedia.org/wiki/Smart_Switch
 
@@ -877,14 +877,14 @@ declare -a samsung_bloat=(
 	# Samsung Easy One Hand mode (replaced by One Hand Operation + : com.samsung.android.sidegesturepad)
 
 	#"com.sec.android.emergencylauncher"
-	# Samsung Launcher when in emergency mode. 
-	# Here, emergency = low battery 
+	# Samsung Launcher when in emergency mode.
+	# Here, emergency = low battery
 	# See below
 
 	#"com.sec.android.emergencymode.service"
-	# Emergency mode enables you to extend your device’s standby time when you are in an emergency situation and you want your device to 
-	# conserve power for as long as possible. When this mode is activated, the screen’s brightness will decrease and some of  
-	# the device's functionality will be limited in order to conserve your battery's charge. The home screen will be changed to a black theme 
+	# Emergency mode enables you to extend your device’s standby time when you are in an emergency situation and you want your device to
+	# conserve power for as long as possible. When this mode is activated, the screen’s brightness will decrease and some of
+	# the device's functionality will be limited in order to conserve your battery's charge. The home screen will be changed to a black theme
 	# to reduce battery consumption.
 	# It is NOT related to SOS messages/911.
 	# https://www.samsung.com/uk/support/mobile-devices/what-is-emergency-mode/
@@ -894,21 +894,21 @@ declare -a samsung_bloat=(
 	# https://fidoalliance.org/specs/u2f-specs-1.0-bt-nfc-id-amendment/fido-glossary.html
 	# https://fidoalliance.org/specs/fido-v2.0-rd-20170927/fido-overview-v2.0-rd-20170927.html
 	#
-	# The UAF protocol is designed to enable online services to offer passwordless and multi-factor security by allowing users to register their device 
+	# The UAF protocol is designed to enable online services to offer passwordless and multi-factor security by allowing users to register their device
 	# to the online service and using a local authentication mechanism such as iris or fingerprint recognition. .
 	# https://developers.google.com/identity/fido/android/native-apps
 	#
-	# The UAF Authenticator-Specific Module (ASM) is a software interface on top of UAF authenticators which gives a standardized way for FIDO UAF clients 
+	# The UAF Authenticator-Specific Module (ASM) is a software interface on top of UAF authenticators which gives a standardized way for FIDO UAF clients
 	# to detect and access the functionality of UAF authenticators and hides internal communication complexity from FIDO UAF Client.
 	# Source : https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-asm-api-v1.0-ps-20141208.html
 	#
 	# Safe to remove if you don't use password-less authentification to access online servics
 
 	"com.sec.android.fido.uaf.client"
-	# Fido UAF client. It's a layer that connects authenticator and RP (the application owner) and ensures validity of the connection. 
+	# Fido UAF client. It's a layer that connects authenticator and RP (the application owner) and ensures validity of the connection.
 	# So it can be browser, desktop application, mobile application, platform(i.e. android/ios).
 	# See above
-	# 
+	#
 	# Safe to remove if you don't use password-less authentification to acess online servics
 
 	#"com.sec.android.gallery3d"
@@ -946,15 +946,15 @@ declare -a samsung_bloat=(
 
 	#"com.sec.android.provider.emergencymode"
 	# Provider for emergency mode (com.sec.android.emergencylauncher)
-	# Reminder : Content providers help an application manage access to data stored by itself, stored by other apps, 
+	# Reminder : Content providers help an application manage access to data stored by itself, stored by other apps,
 	# and provide a way to share data with other apps. They encapsulate the data, and provide mechanisms for defining data security
 	# Source : https://developer.android.com/guide/topics/providers/content-providers.html
 
 	"com.sec.android.provider.snote"
 	# Content provider for S Note (https://www.samsung.com/global/galaxy/apps/samsung-notes/).
-	# REMINDER : Content providers help an application manage access to data stored by itself, stored by other apps, 
+	# REMINDER : Content providers help an application manage access to data stored by itself, stored by other apps,
 	# and provide a way to share data with other apps. They encapsulate the data, and provide mechanisms for defining data security
-	# Source : https://developer.android.com/guide/topics/providers/content-providers.html	
+	# Source : https://developer.android.com/guide/topics/providers/content-providers.html
 
 	"com.sec.android.service.health"
 	# Samsung Health Service
@@ -962,19 +962,19 @@ declare -a samsung_bloat=(
 
 	"com.sec.android.sidesync30"
 	# SideSync (discontinued)
-	# Lets you share the screen and data between your PC and mobile device. 
+	# Lets you share the screen and data between your PC and mobile device.
 	# Receive alarms of your phone through PC and use various features of your phone on the computer.
 	# https://www.samsung.com/levant/support/side-sync/
 
 	"com.sec.android.uibcvirtualsoftkey"
-	# UIBC (User input back channel) 
+	# UIBC (User input back channel)
 	# Allows users to experience the dual monitor function, with the keyboard and mouse having the ability to control your smartphone device.
 	# Either discontinued (for the benefit of Smart View : com.samsung.android.smartmirroring) or related to Smart View.
 
 	#"com.sec.android.wallpapercropper2"
 	# Samsung Wallpaper. Needed for choosing a wallpaper.
-	# Note : it is technically possible to change the wallpaper and then delete this package. 
-	# Used wallpaper are stored in /data/data/com.sec.android.wallpapercropper2/ 
+	# Note : it is technically possible to change the wallpaper and then delete this package.
+	# Used wallpaper are stored in /data/data/com.sec.android.wallpapercropper2/
 
 	"com.sec.android.widgetapp.diotek.smemo"
 	# Samsung Memo widget (was replaced by Samsung Note : com.samsung.android.app.notes)
@@ -987,7 +987,7 @@ declare -a samsung_bloat=(
 
 	"com.sec.android.widgetapp.samsungapps"
 	# Galaxy Essential widget
-	# Galaxy Essentials is a collection of specially chosen applications available through Samsung Apps. 
+	# Galaxy Essentials is a collection of specially chosen applications available through Samsung Apps.
 	# From the Galaxy Essentials widget you can access and download a collection of premium content, free of charge.
 	# https://www.samsung.com/my/support/mobile-devices/what-is-galaxy-essentials-and-how-can-i-add-or-remove-it-from-my-smartphone-home-screen/
 
@@ -1013,7 +1013,7 @@ declare -a samsung_bloat=(
 	# I couldn't find information about this package. No permissions asked. It's quite strange.
 	#
 	# Mobile device management (MDM) is a type of security software used by an IT department to monitor employees' mobile devices.
-	# 
+	#
 	# IMO this package is related to KNOX. The term "entreprise" in the package name strengthens me in my view.
 	# Maybe it is related : https://developer.samsung.com/tech-insights/knox/mobile-device-management
 
@@ -1023,18 +1023,18 @@ declare -a samsung_bloat=(
 	# See above for MDM signification
 
 	#"com.sec.epdg"
-	# Huh... that's hard to explain quickly. Let's try : 
+	# Huh... that's hard to explain quickly. Let's try :
 	# First you need to know that there is a standards organization which develops protocols for mobile telephony called 3GPP (mobile network : 2G/3G/4G/5G).
 	# RAT (physical connection method to a wireless communication network) non specified by the 3GPP is called non-3GPP. RAT Wifi is non-3GPP.
-	# 
-	# ePDG means Evolved Packet Data Gateway. The main role of the ePDG is to provide security mechanisms such as IPsec tunnelling of connections 
+	#
+	# ePDG means Evolved Packet Data Gateway. The main role of the ePDG is to provide security mechanisms such as IPsec tunnelling of connections
 	# with the device over an untrusted non-3GPP access. It is mainly use for VoWifi (Voice over wifi).
-	# For further information : 
+	# For further information :
 	# - https://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-packet-core
 	# - https://www.aptilo.com/solutions/mobile-data-offloading/3gpp-wifi-access/
 	# - https://en.wikipedia.org/wiki/System_Architecture_Evolution#Evolved_Packet_Core_(EPC)
 	#
-	# Safe to remove if not using VoWifi. 
+	# Safe to remove if not using VoWifi.
 
 	"com.sec.epdgtestapp"
 	# Test app for EPDG
@@ -1054,7 +1054,7 @@ declare -a samsung_bloat=(
 	#"com.sec.ims"
 	# IMS is an open industry standard for voice and multimedia communications over packet-based IP networks (Volte/VoIP/Wifi calling).
 	# Don't really know the difference with com.sec.imsservice. Anyway, there is obviously strong interactions between them.
-	# May be unsafe to uninstall it. I need some more testing. 
+	# May be unsafe to uninstall it. I need some more testing.
 
 	"com.sec.imslogger"
 	# IMS Logger provide logging optins.
@@ -1063,13 +1063,13 @@ declare -a samsung_bloat=(
 	#"com.sec.imsservice"
 	# This service allows calls and text messages to be delivered via an IP network (Volte/VoIP/Wifi calling). Video calling are obviously also concerned.
 	# Note : Samsung Dialer will crash if you delete this package and have wifi-calling activated in the Dialer's settings.
-	# May be unsafe to uninstall it. I need some more testing. 
+	# May be unsafe to uninstall it. I need some more testing.
 
 	"com.sec.kidsplat.installer"
 	# Kids Mode (replaced by Kids Home : com.samsung.android.kidsinstaller)
 	# Samsung Kids Home (https://www.samsung.com/global/galaxy/apps/kids-mode/)
 	# Lets you shape a safe environment for your child to happily explore and connect with the world.
-	# NOTE : You shouldn't give your phone to a child. That bad ! 
+	# NOTE : You shouldn't give your phone to a child. That bad !
 	# https://ifstudies.org/blog/a-smartphone-will-change-your-child-in-ways-you-might-not-expect-or-want
 
 	"com.sec.knox.bluetooth"
@@ -1078,7 +1078,7 @@ declare -a samsung_bloat=(
 	# NOTE : This not affect regular bluetooth.
 
 	"com.sec.knox.bridge"
-	# Debug Bridge ? 
+	# Debug Bridge ?
 
 	"com.sec.knox.containeragent2"
 	# Samsung Knox Container (v2 ?)
@@ -1097,7 +1097,7 @@ declare -a samsung_bloat=(
 	# Used to scan nstalled packages
 
 	"com.sec.knox.shortcutsms"
-	# Knox shortcut to switch to workspace 
+	# Knox shortcut to switch to workspace
 	# https://docs.samsungknox.com/knox-platform-for-enterprise/admin-guide/workspace-shortcuts.htm
 
 	"com.sec.knox.switcher"
@@ -1106,13 +1106,13 @@ declare -a samsung_bloat=(
 	# I didn't find any information about these packages.
 
 	"com.sec.location.nsflp2"
-	# Samsung Location 
-	# I just know this doesn't impact on GPS stuff. 
+	# Samsung Location
+	# I just know this doesn't impact on GPS stuff.
 	# It seems to be only used along samsung apps.
 
 	"com.sec.mldapchecker"
-	# MLDAP log. Still a big thing to explain. 
-	# LDAP (Lightweight Directory Access Protocol; I don't know what the M means. Mobile ?) is an open, vendor-neutral, industry standard application 
+	# MLDAP log. Still a big thing to explain.
+	# LDAP (Lightweight Directory Access Protocol; I don't know what the M means. Mobile ?) is an open, vendor-neutral, industry standard application
 	# protocol for accessing and maintaining distributed directory information services over an IP network.
 	#
 	# Directory service refers to the collection of software, hardware, and processes that store and organize everyday items and network resources
@@ -1121,10 +1121,10 @@ declare -a samsung_bloat=(
 	# The thing that Directory service excels at is fast lookups for rarely changing data (email, username etc...)
 	# Differences between database and Directory Service : https://www.c-sharpcorner.com/article/directory-services-vs-rdbms/
 	#
-	# LDAP uses a relatively simple, string-based query to extract information from Active Directory. LDAP can store and extract objects such as usernames 
-	# and passwords in Active Directory, and share that object data throughout a network. 
+	# LDAP uses a relatively simple, string-based query to extract information from Active Directory. LDAP can store and extract objects such as usernames
+	# and passwords in Active Directory, and share that object data throughout a network.
 	# Example of LDAP usage : https://stackoverflow.com/questions/239385/what-is-ldap-used-for/592339
-	# 
+	#
 	# I don't know why and how Samsung uses LDAP. This package, according to its name only does logging.
 
 	"com.sec.modem.settings"
@@ -1146,7 +1146,7 @@ declare -a samsung_bloat=(
 	# https://www.samsunggeeks.com/2015/10/25/what-is-the-samsung-push-service/
 
 	"com.sec.sve"
-	# SecVideoEngineService is arguably a Samsung video engine service (handle enconding/decoding ?) for displaying video trough Samsung apps. 
+	# SecVideoEngineService is arguably a Samsung video engine service (handle enconding/decoding ?) for displaying video trough Samsung apps.
 	# 3 permissions : RECORD_AUDIO, CAMERA, INTERACT_ACROSS_USERS_FULL
 	# Safe to remove.
 
@@ -1160,7 +1160,7 @@ declare -a samsung_bloat=(
 	#"com.sec.svoice.lang.it_GB" # English (GB)
 
 	"com.sec.vsimservice"
-	# VSim Service 
+	# VSim Service
 	# Something related to virtual SIM. I didn't find what Samsung does with this.
 	# https://www.quora.com/What-is-VSIM-virtual-SIM-technology
 	# Has a LOT of permissions (and involving IMS service)
@@ -1187,26 +1187,30 @@ declare -a samsung_bloat=(
 
 	"com.wsomacp"
 	# omacp = OMA Client Provisioning. It is a protocol specified by the Open Mobile Alliance (OMA).
-	# Configuration messages parser. Used for provisioning APN settings to Samsung devices via SMS 
+	# Configuration messages parser. Used for provisioning APN settings to Samsung devices via SMS
 	# In my case, it was automatic and I never needed configuration messages. I'm pretty sure that in France this package is useless.
 	# Maybe it's useful if carriers change their APN. But you still can change it manually, it's not difficult.
-	# Keep in mind these special types of SMS can be abused : 
+	# Keep in mind these special types of SMS can be abused :
 	# https://www.csoonline.com/article/3435729/sms-based-provisioning-messages-enable-advanced-phishing-on-android-phones.html
 	# https://www.zdnet.fr/actualites/les-smartphones-samsung-huawei-lg-et-sony-vulnerables-a-des-attaques-par-provisioning-39890045.htm
 
 	"tv.peel.samsung.app"
 	# Peel Smart Remote (WatchON)
-	# Application is an application that turns your smart phone or tablet into a TV remote. 
-	# The app uses the IR Blaster of your device, so devices not equipped with that feature will not be able to use all of Peel Smart Remote's functions. 
+	# Application is an application that turns your smart phone or tablet into a TV remote.
+	# The app uses the IR Blaster of your device, so devices not equipped with that feature will not be able to use all of Peel Smart Remote's functions.
 	# https://www.samsung.com/za/support/mobile-devices/what-is-the-peel-smart-remote-application/
+
+	"com.samsung.android.mdx"
+	# Link to Windows service
 	)
+
 
 
 #####################  DO NOT REMOVE THIS (will prevent core stuff to work)  #####################
 
 #"com.policydm"
 # Samsung security policy update. I don't have this package and I'm not sure if it is really necessary.
-# Can someone disable it and test if he/she still receives security updates ? 
+# Can someone disable it and test if he/she still receives security updates ?
 # https://www.samsung.com/nz/support/mobile-devices/security-policy-updates/
 
 #"com.samsung.android.SettingsReceiver"
@@ -1216,7 +1220,7 @@ declare -a samsung_bloat=(
 # Let you select a sound for alarm/ringtone
 
 #"com.samsung.android.clipboarduiservice"
-# User interface for clipboard 
+# User interface for clipboard
 
 #"com.samsung.android.communicationservice"
 # Message Service.
@@ -1225,7 +1229,7 @@ declare -a samsung_bloat=(
 #"com.samsung.android.incallui"
 # UI when "being called/in call". It's basically the screen that shows you who is calling, lets you answer and hang up, switch to speaker, etc
 
-#"com.samsung.android.provider.filterprovider" 
+#"com.samsung.android.provider.filterprovider"
 # FilterProvider dependency to Samsung Camera
 # Provides access to filters (when you swipe right from the camera app)
 # WARNING : Samsung camera will crash if this package is deleted.
@@ -1247,9 +1251,4 @@ declare -a samsung_bloat=(
 #"com.sec.android.inputmethod"
 # Samsung keyboard
 # Note : used for unlocking the phone after a reboot. Third-parties keyboards cannot be used here.
-# DO NOT REMOVE THIS. NEVER ! 
-
-
-
-
-
+# DO NOT REMOVE THIS. NEVER !
