@@ -12,7 +12,7 @@ BBLUE='\033[1;34m'
 GREEN='\033[0;32m'
 ORANGE='\033[0;33m'
 NC='\033[0m' # No Color
-Bold=$(tput bold) 
+Bold=$(tput bold)
 nBold=$(tput sgr0)
 
 
@@ -23,7 +23,7 @@ function debloat {
 	[[ $action_arg = 'r' ]] && user_choice='cmd package install-existing $package' || user_choice='pm uninstall $option_needed $package'
 
 	# Android 7.1 and older can't reinstall packages
-	if [[ $(adb shell getprop ro.build.version.release) < 8.0 && "$force_uninstall" = "0" ]]; then
+	if [[ $(adb shell getprop ro.build.version.release) -lt 8.0 && "$force_uninstall" = "0" ]]; then
 		[[ $action_arg = 'r' ]] && user_choice='pm enable $package' || user_choice='pm disable-user $package && am force-stop $package && pm clear $package'
 	fi
 
@@ -34,7 +34,7 @@ function debloat {
 		printf "${RED}$package${NC} --> "
 		local output=$(eval adb shell $user_choice)
 		echo "$output"
-		if [[ "$output" != "Failure" ]]; then echo "$package" >> "debloated_packages.txt"; fi 
+		if [[ "$output" != "Failure" ]]; then echo "$package" >> "debloated_packages.txt"; fi
 	done
 }
 
@@ -44,8 +44,8 @@ function carrier_choice {
 	echo "2 - French carriers"
 	echo "3 - German carriers"
 	printf "\n${RED}${Bold}Your choice : ${nBold}${NC}"
-	read -n 1 
-	case $REPLY in	
+	read -n 1
+	case $REPLY in
 		1) [[ $action_arg = 'r' ]] && debloat us_carriers_bloat      || debloat us_carriers_bloat ;;
 		2) [[ $action_arg = 'r' ]] && debloat french_carriers_bloat  || debloat french_carriers_bloat ;;
 		3) [[ $action_arg = 'r' ]] && debloat german_carriers_bloat  || debloat german_carriers_bloat ;;
@@ -66,13 +66,13 @@ function list {
 function remove_or_install_one {
 	local choice=""
 	local user_choice=''
-	if [[ $action_arg = 'r' ]]; 
+	if [[ $action_arg = 'r' ]];
 	then choice="restore"; user_choice='cmd package install-existing $REPLY';
 	else choice="uninstall"; user_choice='pm uninstall $option_needed $REPLY';
 	fi
 
 	# Android 7.1 and older can't reinstall packages
-	if [[ $(adb shell getprop ro.build.version.release) < 8.0 && "$force_uninstall" = "0" ]]; then
+	if [[ $(adb shell getprop ro.build.version.release) -lt 8.0 && "$force_uninstall" = "0" ]]; then
 		[[ $action_arg = 'r' ]] && user_choice='pm enable $REPLY' || user_choice='pm disable-user $REPLY && am force-stop $REPLY && pm clear $REPLY'
 	fi
 
@@ -81,7 +81,7 @@ function remove_or_install_one {
 	read
 	local output=$(eval adb shell $user_choice)
 	echo "$output"
-	if [[ "$output" != "Failure" ]]; then echo "$REPLY" >> "debloated_packages.txt"; fi 
+	if [[ "$output" != "Failure" ]]; then echo "$REPLY" >> "debloated_packages.txt"; fi
 }
 
 function restore {
@@ -102,27 +102,27 @@ function check_backup_integrity {
 
 function brand_detection {
 	local brand=$(adb shell getprop ro.product.brand)
-	if [[ $brand>0 ]]; then 
+	if [[ $brand>0 ]]; then
 		case $brand in
-			"asus")  
+			"asus")
 				echo "asus_bloat" ;;
-			"huawei") 
+			"huawei")
 				echo "huawei_bloat" ;;
-			"lg") 
+			"lg")
 				echo "lg_bloat" ;;
 			"motorola")
 				echo "motorola_bloat" ;;
-			"nokia") 
+			"nokia")
 				echo "nokia_bloat" ;;
 			"oneplus")
 				echo "oneplus_bloat" ;;
-			"samsung") 
+			"samsung")
 				echo "samsung_bloat" ;;
-			"sony") 	
+			"sony")
 				echo "sony_bloat" ;;
-			"xiaomi") 	
+			"xiaomi")
 				echo "xiaomi_bloat" ;;
-			*) 
+			*)
 				echo "Brand not supported (yet)" ;;
 		esac
 	fi
@@ -146,7 +146,7 @@ if [[ $REPLY =~ [Yy]+[Ee]*[Ss]* ]]; then
 	clear;
 	backup=$(date +%Y-%m-%d-%H:%M:%S)
 	adb backup -apk -all -system -f "${PHONE:-phone}-${backup}.adb"  # -noshare option is default
-	echo 
+	echo
 	read -n 1 -s -p "Press a key when the backup is done (your phone will tell you)"
 	check_backup_integrity "${PHONE:-phone}-${backup}.adb";
 fi
@@ -156,19 +156,19 @@ space=$((25-${#brand}))
 if [[ $space =~ "-" ]]; then space="0"; fi
 
 # --user 0 option doesn't exist in Android SDK API version < 20
-option_needed="" 
+option_needed=""
 if [[ $(adb shell getprop ro.build.version.sdk) > 20 ]]; then option_needed="--user 0"; fi
 
 while true; do
 
 	clear;
-	if [[ $(adb shell getprop ro.build.version.release) < 8.0 ]]; then 
+	if [[ $(adb shell getprop ro.build.version.release) -lt 8.0 ]]; then
 	printf "${RED}${Bold}WARNING : Your android version is too old (< 8.0). Uninstalled packages can't be restored.\n";
 	printf "By default the script will force-disable the apps instead of uninstalling them so that you can restore them if needed\n\n"
 	printf "If you still want to force-uninstall the apps, type '1' ('0' otherwise): ${NC}"
 	read $force_uninstall
 	fi
-	
+
 	clear;
 	printf "\n${Bold}${ORANGE}===================  MAIN MENU  ===================\n"
 	printf "#                                               ${ORANGE}  #\n"
@@ -214,7 +214,7 @@ while true; do
 		if [[ "$action" =~ 2 ]]; then debloat; fi
 		if [[ "$action" =~ 3 ]]; then debloat google_bloat && debloat microsoft_bloat && debloat amazon_bloat && debloat facebook_bloat; fi
 		if [[ "$action" =~ 5 ]]; then debloat misc_bloat; fi
-		if [[ "$action" =~ 6 ]]; then debloat aosp_bloat; fi	
+		if [[ "$action" =~ 6 ]]; then debloat aosp_bloat; fi
 	fi
 
 adb shell 'pm list packages' | sed -r 's/package://g' | sort > remaining_packages.txt
